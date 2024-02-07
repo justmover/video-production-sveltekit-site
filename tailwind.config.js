@@ -5,6 +5,7 @@ const colors = require('tailwindcss/colors');
 export default {
 	mode: 'jit',
 	darkMode: 'class',
+  purge: ['./src/**/*.{js,svelte}'],
 	content: [
 		'./src/**/*.{html,js,svelte,ts}',
 		'./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'
