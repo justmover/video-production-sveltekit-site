@@ -1,6 +1,7 @@
 <!-- landing page with title, past projects and a action button which direct to whatsapp, using tailwind as styling -->
 <script>
-	//   import { projects } from '../lib/projects.js';
+    import '../tailwind.css';
+    
 	let projects = [
 		{
 			name: 'Project 1',
@@ -10,7 +11,7 @@
 </script>
 
 <main class="flex flex-col items-center justify-center h-screen">
-	<h1 class="text-6xl font-bold">客似雲來 2.0 影片製作計劃</h1>
+	<h1 class="text-3xl font-bold">客似雲來 2.0 影片製作計劃</h1>
 	<p class="text-2xl mt-5">發掘你的幸福故事</p>
 	<div class="flex flex-col items-center justify-center mt-10">
 		<h2 class="text-4xl font-bold">過往的作品</h2>
@@ -30,7 +31,4 @@
 </main>
 
 <style>
-	main {
-		background-color: #f3f4f6;
-	}
 </style>
