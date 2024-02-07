@@ -1,42 +1,36 @@
 // colors: https://tailwindcss.com/docs/customizing-colors
-const colors = require('tailwindcss/colors')
-
+const colors = require('tailwindcss/colors');
 
 /** @type {import('tailwindcss').Config} */
 export default {
 	mode: 'jit',
 	darkMode: 'class',
 	content: [
-		'./src/**/*.{svelte,html}'
+		'./src/**/*.{html,js,svelte,ts}',
+		'./node_modules/flowbite-svelte/**/*.{html,js,svelte,ts}'
 	],
 	theme: {
-		colors: {
-			transparent: 'transparent',
-			current: 'currentColor',
-			gray: colors.neutral,
-			white: colors.white,
-			primary: colors.sky,
-			green: colors.green,
-			yellow: colors.amber,
-			red: colors.red,
-			black: colors.black,
-		},
-		extend: {
-			fontFamily: {
-				sans: [
-					'-apple-system',
-					'BlinkMacSystemFont',
-					'Segoe UI',
-					'Roboto',
-					'Helvetica Neue',
-					'Arial',
-					'sans-serif',
-				],
-			},
-		},
-	},
+    extend: {
+      colors: {
+        // flowbite-svelte
+        primary: {
+          50: '#FFF5F2',
+          100: '#FFF1EE',
+          200: '#FFE4DE',
+          300: '#FFD5CC',
+          400: '#FFBCAD',
+          500: '#FE795D',
+          600: '#EF562F',
+          700: '#EB4F27',
+          800: '#CC4522',
+          900: '#A5371B'
+        }
+      }
+    }
+  },
 	variants: {},
-	plugins: [],
-	future: {},
-}
-
+	plugins: [
+    require('flowbite/plugin')
+  ],
+	future: {}
+};
