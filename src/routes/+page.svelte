@@ -20,6 +20,12 @@
 	let enagementMessage = '你好，我想了解更多關於客似雲來 2.0 影片製作計劃。';
 </script>
 
+<svelte:head>
+	<title>客似雲來 2.0 影片製作計劃</title>
+	<meta name="description" content="發掘你的幸福故事" />
+	<script src="https://cdn.tailwindcss.com"></script>
+</svelte:head>
+
 <main class="flex flex-col items-center justify-center">
 	<h1 class="text-3xl font-bold">客似雲來 2.0 影片製作計劃</h1>
 	<p class="text-2xl mt-5">發掘你的幸福故事</p>
@@ -68,6 +74,3 @@
 		<span> 立即查詢 </span>
 	</a>
 </main>
-
-<style>
-</style>
